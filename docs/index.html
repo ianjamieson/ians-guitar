@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
     <title>Ian's Guitar</title>
 </head>
 <body>
-    <div class="w-1/2">
-
+    <div class="flex flex-col md:flex-row h-screen w-full">
+        <div class="md:w-1/2 p-6 md:p-12 flex items-center">
+            <div class="h-auto space-y-6">
+                <h1 class="text-4xl">The Acoustic Guitarist</h1>
+                <h2 class="text-xl">The perfect accompaniment for weddings and events. </h2>
+                <p></p>
+                <a
+                    href="mailto:i@njamieson.co.uk?subject=Wedding%20Guitar%20Enquiry"
+                    class="block text-center bg-[#d88b79] text-white p-2 rounded no-underline">Get in touch</a>
+            </div>
+        </div>
+        <div class="order-first md:order-last md:w-1/2">
+            <img
+                class="object-cover object-center w-full h-full"
+                src="assets/img/guitar.jpg"
+                alt="Ian playing guitar at a wedding">
+        </div>
     </div>
-    Hello World
 </body>
 </html>
