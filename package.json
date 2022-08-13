@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ianjamieson/ians-guitar.git"
+    "url": "git+https://github.com/ianjamieson/theweddingguitar.git"
   },
   "author": "Ian Jamieson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ianjamieson/ians-guitar/issues"
+    "url": "https://github.com/ianjamieson/theweddingguitar/issues"
   },
-  "homepage": "https://github.com/ianjamieson/ians-guitar#readme"
+  "homepage": "https://github.com/ianjamieson/theweddingguitar#readme"
 }
