@@ -10,47 +10,68 @@
     <link rel="icon" href="assets/img/icons/favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <title>The Wedding Guitar</title>
+    <meta name="description" content="The perfect musical accompaniment for your wedding.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://theweddingguitar.co.uk/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Wedding Guitar">
+    <meta property="og:description" content="The perfect musical accompaniment for your wedding.">
+    <meta property="og:image" content="https://theweddingguitar.co.uk/assets/img/guitar.jpg">
+    <meta property="og:image:width" content="1920"/>
+    <meta property="og:image:height" content="1280"/>
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="theweddingguitar.co.uk">
+    <meta property="twitter:url" content="https://theweddingguitar.co.uk/">
+    <meta name="twitter:title" content="The Wedding Guitar">
+    <meta name="twitter:description" content="The perfect musical accompaniment for your wedding.">
+    <meta name="twitter:image" content="https://theweddingguitar.co.uk/assets/img/guitar.jpg">
+
 </head>
-<body>
-    <div class="flex flex-col md:flex-row h-screen w-full">
-        <div class="md:w-1/2 p-6 md:p-12 flex md:items-center relative h-screen">
+<body class="bg-gray-50">
+    <main class="bg-white flex flex-col md:flex-row md:h-screen w-full max-w-container mx-auto">
+        <div class="md:w-1/2 p-6 md:p-12 md:items-center relative md:h-screen">
             <div class="h-auto space-y-6">
                 <h1 class="text-4xl">The Wedding Guitar</h1>
-                <h2 class="text-xl">The perfect accompaniment for weddings and events.</h2>
-                <p>When booking The Wedding Guitar you and your guests will enjoy 2 hours of fingerstyle acoustic guitar music, a perfect addition to when your guests are socialising.
-                <p>You will also be able to choose your own song to walk down the aisle, I will make a unique fingerstyle arrangement of your chosen song</p>
+                <h2 class="text-xl">The perfect musical accompaniment for your wedding.</h2>
+                <p>When booking The Wedding Guitar you and your guests will enjoy 2 hours of fingerstyle acoustic guitar music - a perfect background while your guests are socialising.</p>
+                <p>As an alternative to traditional wedding music, you may wish to choose your own special song as accompaniment when you walk down the aisle and I can create a unique fingerstyle arrangement of your chosen song.</p>
+                <p>Please get in touch if you want to discuss any particular requirements</p>
                 <a
                     href="mailto:i@njamieson.co.uk?subject=The%20Wedding%20Guitar%20Enquiry"
-                    class="block text-center bg-[#d88b79] text-white p-2 rounded no-underline">Get in touch</a>
-            </div>
+                    class="block text-center bg-orange-500 hover:bg-orange-200 text-white p-2 rounded no-underline">Get in touch &raquo;</a>
 
-            <div id="player" class="absolute bottom-0 left-0 w-full overflow-hidden">
-                <div class="flex justify-end p-1.5 pr-2.5 hover:underline">
-                    <button
-                        class="flex items-center space-x-2"
-                        data-control="play">
-                            <span>Play a sample</span>
-                            <img src="assets/img/icons/play.svg" class="w-6">
-                        </button>
-                    <button
-                        class="flex items-center space-x-2 hidden"
-                        data-control="stop">
-                            <span>Play a sample</span>
-                            <img src="assets/img/icons/pause.svg" class="w-6">
-                        </button>
+
+                <div id="player" class="relative border rounded-lg w-full overflow-hidden shadow">
+                    <div class="p-1.5 pr-2.5 hover:underline">
+                        <button
+                            class="flex justify-center items-center space-x-2 w-full"
+                            data-control="play">
+                                <span>Play a sample</span>
+                                <img src="assets/img/icons/play.svg" class="w-6">
+                            </button>
+                        <button
+                            class="flex justify-center items-center space-x-2 hidden w-full"
+                            data-control="stop">
+                                <span>Play a sample</span>
+                                <img src="assets/img/icons/pause.svg" class="w-6">
+                            </button>
+                    </div>
+
+                    <audio
+                        ref="audio"
+                        class="hidden"
+                    >
+                        <source
+                            src="https://download.samplelib.com/mp3/sample-15s.mp3"
+                            type="audio/mpeg"
+                        />
+                    </audio>
+
+                    <div class="absolute h-1 bottom-0 bg-orange-500 w-0" data-control="progress"></div>
                 </div>
-
-                <audio
-                    ref="audio"
-                    class="hidden"
-                >
-                    <source
-                        src="https://download.samplelib.com/mp3/sample-15s.mp3"
-                        type="audio/mpeg"
-                     />
-                </audio>
-
-                <div class="h-2 bg-[#d88b79] w-0" data-control="progress"></div>
             </div>
         </div>
         <div id="carousel" class="order-first md:order-last md:w-1/2">
@@ -59,7 +80,11 @@
                 src="assets/img/guitar.jpg"
                 alt="Ian playing guitar at a wedding">
         </div>
-    </div>
+    </main>
+    <footer class="h-12 bg-gray-50 flex items-center px-1 justify-end space-x-3 mx-auto max-w-container">
+        <span>Ian Jamieson</span>
+        <a href="https://facebook.com/iansguitarsessions" target="_blank"><img src="assets/img/icons/facebook.svg" class="w-6 border border-black rounded-full p-0.5"></a>
+    </footer>
     <script src="assets/js/app.js" defer></script>
 </body>
 </html>
