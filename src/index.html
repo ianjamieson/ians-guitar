@@ -75,10 +75,14 @@
             </div>
         </div>
         <div id="carousel" class="order-first md:order-last md:w-1/2">
-            <img
-                class="object-cover object-center w-full h-full"
-                src="assets/img/guitar.jpg"
-                alt="Ian playing guitar at a wedding">
+            <picture>
+                <source
+                    srcset="assets/img/guitar_square.jpg"
+                    media="(min-width: 768px)">
+                <img
+                    class="object-cover object-center w-full h-full"
+                    src="assets/img/guitar_rectangle.jpg" alt="Ian playing guitar at a wedding" />
+            </picture>
         </div>
     </main>
     <footer class="h-12 bg-gray-50 flex items-center px-1 justify-end space-x-3 mx-auto max-w-container">
